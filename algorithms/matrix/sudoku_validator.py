@@ -3,6 +3,7 @@ Write a function validSolution/ValidateSolution/valid_solution() that accepts a 
 The board is always 9 cells by 9 cells, and every cell only contains integers from 0 to 9.
 
 (More info at: http://en.wikipedia.org/wiki/Sudoku)
+
 """
 
 # Using dict/hash-table
@@ -66,6 +67,7 @@ def valid_solution(board):
 
 # Using set
 def valid_solution_set (board):
+
     valid = set(range(1, 10))
 
     for row in board:

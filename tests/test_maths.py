@@ -252,7 +252,7 @@ class TestPrimeTest(unittest.TestCase):
             if prime_check(i):
                 counter += 1
         self.assertEqual(25, counter)
-
+	#self.assertEqual(True, prime_check(5))
 
 class TestPythagoras(unittest.TestCase):
     """[summary]
