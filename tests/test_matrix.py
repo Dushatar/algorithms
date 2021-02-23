@@ -11,7 +11,6 @@ from algorithms.matrix import (
     spiral_traversal,
     sudoku_validator,
     sum_sub_squares,
-    sort_matrix_diagonally
 )
 import unittest
 
@@ -353,22 +352,6 @@ class TestSumSubSquares(unittest.TestCase):
                [5, 5, 5, 5, 5]]
         self.assertEqual(sum_sub_squares.sum_sub_squares(mat, 3),
                          [[18, 18, 18], [27, 27, 27], [36, 36, 36]])
-
-
-class TestSortMatrixDiagonally(unittest.TestCase):
-    def test_sort_diagonally(self):
-        mat = [
-            [3, 3, 1, 1],
-            [2, 2, 1, 2],
-            [1, 1, 1, 2]
-        ]
-
-        self.assertEqual(sort_matrix_diagonally.sort_diagonally(mat), [
-            [1, 1, 1, 1],
-            [1, 2, 2, 2],
-            [1, 2, 3, 3]
-        ])
-
 
 if __name__ == "__main__":
     unittest.main()
